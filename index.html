@@ -77,19 +77,37 @@
         .subtitle {
             font-size: 1.2rem;
             color: #e0e0e0;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
             font-style: italic;
         }
 
-        .author-box {
-            margin-bottom: 30px;
+        /* Author Profile in Hero */
+        .author-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 35px;
+        }
+
+        .author-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .author-info {
+            text-align: center;
         }
 
         .author-name {
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             color: #ffffff;
             font-weight: 700;
-            margin-bottom: 5px;
+            margin-bottom: 4px;
         }
 
         .preface-name {
@@ -310,9 +328,13 @@
             </div>
             <h1>La RDC : de la démocratie à vide à la « maâtocratie »</h1>
             <p class="subtitle">Anatomie d'une imposture importée et fondements d'un système endogène</p>
-            <div class="author-box">
-                <div class="author-name">Auteur : Alain Tchyombo Diya</div>
-                <div class="preface-name">Préface : Didier Mumengi</div>
+            
+            <div class="author-container">
+                <img src="auteur.jpg" alt="Alain Tchyombo Diya" class="author-photo">
+                <div class="author-info">
+                    <div class="author-name">Auteur : Alain Tchyombo Diya</div>
+                    <div class="preface-name">Préface : Didier Mumengi</div>
+                </div>
             </div>
             
             <div class="cta-buttons">
@@ -352,7 +374,7 @@
         </section>
 
         <!-- SECTION AVIS & COMMUNAUTÉ -->
-        <!-- <section class="card">
+        <section class="card">
             <h2>Avis & Retours de lecture</h2>
             <div class="reviews-grid">
                 <div class="review-card">
@@ -365,7 +387,7 @@
                 <a href="https://www.babelio.com" target="_blank" class="community-badge">Avis Babelio</a>
                 <a href="https://www.amazon.fr" target="_blank" class="community-badge">Avis Amazon</a>
             </div>
-        </section> -->
+        </section>
 
         <!-- SECTION CONTACT -->
         <section class="contact-section">
@@ -373,10 +395,10 @@
             <p>E-mail : <a href="mailto:actsolco@gmail.com">actsolco@gmail.com</a></p>
             <p>Téléphone : <a href="tel:+243821143776">+243 821 143 776</a> / <a href="tel:+33682617037">+33 6 82 61 70 37</a></p>
             
-            <!-- <div class="press-kit-box">
+            <div class="press-kit-box">
                 <p style="margin-bottom: 10px; font-weight: 600; color: var(--primary);">Espace Médias</p>
                 <a href="https://www.editions-harmattan.fr/catalogue/livre/la-rdc-de-la-democratie-a-vide-a-la-maatocratie/86691" target="_blank" class="btn btn-secondary" style="background-color: var(--secondary); padding: 8px 20px; font-size: 0.9rem;">Consulter le communiqué de presse</a>
-            </div> -->
+            </div>
         </section>
 
         <footer>
