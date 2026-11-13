@@ -189,6 +189,35 @@
             border-radius: 0 8px 8px 0;
         }
 
+        /* Videos Section */
+        .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .video-container {
+            background: #f7f9f8;
+            border-radius: 12px;
+            padding: 15px;
+            border: 1px solid #d1dedb;
+            text-align: center;
+        }
+
+        .video-container video {
+            width: 100%;
+            border-radius: 8px;
+            outline: none;
+        }
+
+        .video-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-top: 10px;
+        }
+
         /* Store Section */
         .store-section {
             background-color: var(--card-bg);
@@ -348,7 +377,7 @@
             <h2>Repenser l’avenir de la RDC et de l’Afrique à partir de ses propres valeurs et son histoire</h2>
             <p>Il y a environ deux siècles, de nombreux philosophes et scientifiques exprimaient de fortes critiques à l’égard de la démocratie, mettant en garde contre les risques qu’elle pouvait engendrer. Aujourd’hui, la plupart des pays à travers le monde ont adopté un système politique fondé sur l’élection pour désigner leurs représentants, qu’ils qualifient de « démocratie ».</p>
             <p>Des millions de citoyens considèrent à tort l’élection comme l’expression de la démocratie. Les partis politiques et les médias dominants en constituent les principaux piliers, contribuant à la pérennité de ce modèle.</p>
-            <blockquote>« L'auteur met en lumière une illusion : celle qui consiste à présenter un système en réalité aristocratique et oligarchique comme démocratique. »</blockquote>
+            <blockquote>« L'auteur met en lumière une illusion : celle qui consiste à présenter un système en réalité aristocratique et oligarchique comme démocratie. »</blockquote>
             <p>Dans cet ouvrage audacieux, Alain Tchyombo Diya remet en question ce mode de gouvernance et appelle à l’instauration d’une démocratie véritable, fondée sur ses principes essentiels. Pour la RDC et l'Afrique, cela suppose un retour aux valeurs africaines ancestrales et millénaires : la <strong>maâtocratie</strong>.</p>
         </section>
 
@@ -359,18 +388,39 @@
             <p>Animé par un vif intérêt pour la politique, l’histoire et la philosophie, il œuvre depuis de nombreuses années à la promotion d’un retour aux valeurs authentiques. Depuis 2012, il est à la tête de l'ONG A.S.CO (Action et Solidarité pour le Congo).</p>
         </section>
 
+        <!-- SECTION DÉDICACES & ÉVÉNEMENTS -->
+        <section class="card">
+            <h2>Séance de dédicace à Saint-Louis (près de Bâle)</h2>
+            <p>Retrouvez en images et en vidéo l'ambiance chaleureuse de la séance de dédicace de l'ouvrage organisée dans une librairie à Saint-Louis, aux portes de Bâle.</p>
+            <div class="videos-grid">
+                <div class="video-container">
+                    <video controls preload="metadata">
+                        <source src="video_dedicace_1.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la lecture de vidéos.
+                    </video>
+                    <div class="video-title">Moments d'échange avec les lecteurs</div>
+                </div>
+                <div class="video-container">
+                    <video controls preload="metadata">
+                        <source src="video_dedicace_2.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la lecture de vidéos.
+                    </video>
+                    <div class="video-title">Ambiance de la séance de dédicace</div>
+                </div>
+            </div>
+        </section>
+
         <!-- SECTION COMMANDE / PARTENAIRES -->
         <section id="commander" class="store-section">
             <h2>Où se procurer le livre ?</h2>
-            <div class="book-specs">Parution : 01/10/2026 &bull; 276 pages &bull; Prix : 25 € &bull; EAN : 9782336625171</div>
+            <div class="book-specs">Parution : 01/10/2026 • 276 pages • Prix : 25 € • EAN : 9782336625171</div>
             <div class="retailers">
                 <a href="https://www.editions-harmattan.fr/catalogue/livre/la-rdc-de-la-democratie-a-vide-a-la-maatocratie/86691" target="_blank" class="retailer-badge">L'Harmattan</a>
                 <a href="https://www.decitre.fr/livres/la-rdc-de-la-democratie-a-vide-a-la-maatocratie-9782336625171.html" target="_blank" class="retailer-badge">Decitre</a>
-                <a href="https://www.cultura.com/p-la-rdc-de-la-democratie-a-vide-a-la-maatocratie-9782336625171.html" target="_blank" class="retailer-badge">Cultura</a>
-                <a href="https://www.fnac.com/a23614273/Alain-Tchyombo-Diya-La-RDC-de-la-democratie-a-vide-a-la-maatocratie" target="_blank" class="retailer-badge">Fnac</a>
-                <a href="https://www.amazon.fr/RDC-d%C3%A9mocratie-ma%C3%A2tocratie-imposture-fondements/dp/2336625172/ref=mp_s_a_1_1?crid=9QCG2YKJMM5V&dib=eyJ2IjoiMSJ9.7yvCPXx0nK_v6QgKze2eoA.LH6FF1sf4G7p7ssYlUgCINASjH-1zyFk7noal9QNqes&dib_tag=se&keywords=alain+tchyombo&qid=1789321459&sprefix=Alain+Tchy%2Caps%2C159&sr=8-1" target="_blank" class="retailer-badge">Amazon</a>
-                <a href="https://www.laboutiqueafricavivre.com/s/3510835/alain-tchyombo-diya" target="_blank" class="retailer-badge">Africa Vivre</a>
-                <!-- <a href="https://www.babelio.com" target="_blank" class="retailer-badge">Babelio</a> -->
+                <a href="https://www.cultura.com" target="_blank" class="retailer-badge">Cultura</a>
+                <a href="https://www.fnac.com" target="_blank" class="retailer-badge">Fnac</a>
+                <a href="https://www.amazon.fr" target="_blank" class="retailer-badge">Amazon</a>
+                <a href="https://www.babelio.com" target="_blank" class="retailer-badge">Babelio</a>
             </div>
         </section>
 
@@ -396,14 +446,14 @@
             <p>E-mail : <a href="mailto:actsolco@gmail.com">actsolco@gmail.com</a></p>
             <p>Téléphone : <a href="tel:+243821143776">+243 821 143 776</a> / <a href="tel:+33682617037">+33 6 82 61 70 37</a></p>
             
-            <div class="press-kit-box">
+            <div class="press-press-kit-box">
                 <p style="margin-bottom: 10px; font-weight: 600; color: var(--primary);">Espace Médias</p>
                 <a href="https://www.editions-harmattan.fr/catalogue/livre/la-rdc-de-la-democratie-a-vide-a-la-maatocratie/86691" target="_blank" class="btn btn-secondary" style="background-color: var(--secondary); padding: 8px 20px; font-size: 0.9rem;">Consulter le communiqué de presse</a>
             </div>
         </section>
 
         <footer>
-            <p>&copy; 2026 Alain Tchyombo Diya — Tous droits réservés.</p>
+            <p>© 2026 Alain Tchyombo Diya — Tous droits réservés.</p>
         </footer>
     </div>
 
